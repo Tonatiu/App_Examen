@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:text="Nombres"
+        android:ems="10"
+        android:id="@+id/User_First_Names"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:text="Apellido"
+        android:ems="10"
+        android:id="@+id/User_last_Names"
+        android:layout_below="@+id/User_First_Names"
+        android:layout_centerHorizontal="true" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="phone"
+        android:ems="10"
+        android:id="@+id/User_Phone"
+        android:layout_below="@+id/User_last_Names"
+        android:layout_centerHorizontal="true"
+        android:text="Teléfono" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textEmailAddress"
+        android:ems="10"
+        android:id="@+id/User_Mail"
+        android:layout_below="@+id/User_Phone"
+        android:layout_centerHorizontal="true"
+        android:text="Correo electrónico" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Registrar"
+        android:id="@+id/Registry_Button"
+        android:layout_marginBottom="34dp"
+        android:layout_alignParentBottom="true"
+        android:onClick="SaveData"
+        android:layout_toLeftOf="@+id/Get_Picture_Button"
+        android:layout_toStartOf="@+id/Get_Picture_Button" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Capturar Foto"
+        android:id="@+id/Get_Picture_Button"
+        android:layout_alignBottom="@+id/Registry_Button"
+        android:onClick="Take_Picture"
+        android:layout_alignRight="@+id/User_Mail"
+        android:layout_alignEnd="@+id/User_Mail" />
+
+    <ImageView
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:id="@+id/User_Picture"
+        android:layout_below="@+id/User_Mail"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="28dp" />
+
+
+</RelativeLayout>
